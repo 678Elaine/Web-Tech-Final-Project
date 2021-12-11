@@ -12,7 +12,7 @@
 </head>
 
 <body class="color">
-<!-- Form created to get information from client-->
+<!-- Form created to get log in information from administrator-->
 <div class="no">
     <form method="post" action="">
         
@@ -47,7 +47,7 @@ if(isset($_POST['submit'])){
         $row = mysqli_fetch_array($result);
 
         $count = $row['cntUser'];
-// if the count is greater than 1, the information is in the database and therefore head to the next page
+// if the count is greater than 1, get the information is in the database and therefore head to the next page
         if($count > 0){
             $_SESSION['uname'] = $uname;
             header('Location: home.php');
@@ -59,6 +59,8 @@ if(isset($_POST['submit'])){
 
 }
 ?>
+
+<center><a href="index.php"><button>Return to Home page</button></a></center>
 </html>
 
 
