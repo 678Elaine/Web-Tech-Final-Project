@@ -1,3 +1,4 @@
+<!--References: W3 schools-->
 <!DOCTYPE html>
 <html style="background-image: url('capture.jpg');">
 <meta charset="UTF-8">
@@ -18,8 +19,8 @@ h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 <div class="w3-top">
   <div class="w3-bar w3-red w3-card w3-left-align w3-large">
     <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="print.php" class="w3-bar-item w3-button w3-padding-large w3-white">Review</a>
-    <a href="any.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Employees</a>
+    <a href="home.php" class="w3-bar-item w3-button w3-padding-large w3-white">Review</a>
+    <a href="viewemployees.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Employees</a>
     <a href="viewbaby.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Baby</a>
     <a href="viewmother.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Mother</a>
     <a href="viewfather.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Father</a>
@@ -29,8 +30,8 @@ h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
-    <a href="print.php" class="w3-bar-item w3-button w3-padding-large">Review</a>
-    <a href="any.php" class="w3-bar-item w3-button w3-padding-large">Employees</a>
+    <a href="home.php" class="w3-bar-item w3-button w3-padding-large">Review</a>
+    <a href="viewemployees.php" class="w3-bar-item w3-button w3-padding-large">Employees</a>
     <a href="viewbaby.php" class="w3-bar-item w3-button w3-padding-large">Baby</a>
     <a href="viewmother.php" class="w3-bar-item w3-button w3-padding-large">Mother</a>
     <a href="viewfather.php" class="w3-bar-item w3-button w3-padding-large">Father</a>
@@ -52,7 +53,7 @@ h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 
         <!--link to the home page to allow administrators to return back-->
 
-        <a href="final_project.php"><button class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Return to Home page</button></a>
+        <a href="index.php"><button class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Return to Home page</button></a>
 
         
 

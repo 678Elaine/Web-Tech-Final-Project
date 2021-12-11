@@ -17,7 +17,7 @@ h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 <div class="w3-top">
   <div class="w3-bar w3-red w3-card w3-left-align w3-large">
     <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="final_project.php" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Home</a>
+    <a href="index.php" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Home</a>
     <a href="staff.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Employee</a>
     <a href="client.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Client</a>
     <a href="hospital.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-white">Hospital</a>
@@ -38,6 +38,7 @@ h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
     <body><center>
     <h1>Hospital Details</h1>
         <div class="no">
+            <!--Create a form to take information from the clients-->
         <form method="POST" action="">
         Hospital ID <input type = "text" id="query" name= "hospitalID" placeholder="Enter the Hospital ID"></br>
         Hospital name <input type = "text" id="query" name= "hospital_name" placeholder="Enter the hospital name"></br>
@@ -91,7 +92,7 @@ h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
                 }
 
                 
-                   
+                    // Insert into the Hospital table
                   $sql = "INSERT INTO Hospital (hospitalID,hospital_name,town,region)
                   VALUES ( '$hospitalID','$hospital_name','$town','$region')";
               
@@ -118,7 +119,7 @@ h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
                 if(isset($_POST['email'])){
                     $email =$_POST['email'];
                 }
-
+                //insert into the Health Personnel table
 
                 $sql = "INSERT INTO Health_personnel (personnel_name,hospitalID,personnel_type,email)
                 VALUES ( '$personnel_name','$hospitalID','$personnel_type','$email')";
